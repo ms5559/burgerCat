@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{75F5EF8E-8D30-440E-9B3D-2159D5BDF8EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_1;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Flux\Extensions\PlayMaker\FluxEaseSpeed.cs" />
+     <Compile Include="Assets\Plugins\Flux\Extensions\PlayMaker\FluxPauseSequence.cs" />
+     <Compile Include="Assets\Plugins\Flux\Extensions\PlayMaker\FluxPlaySequence.cs" />
+     <Compile Include="Assets\Plugins\Flux\Extensions\PlayMaker\FluxResumeSequence.cs" />
+     <Compile Include="Assets\Plugins\Flux\Extensions\PlayMaker\FluxSetCurrentFrame.cs" />
+     <Compile Include="Assets\Plugins\Flux\Extensions\PlayMaker\FluxSetCurrentTime.cs" />
+     <Compile Include="Assets\Plugins\Flux\Extensions\PlayMaker\FluxStopSequence.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Animation\FPlayAnimationEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Audio\FGlobalVolumeAudioEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Audio\FPlayAudioEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Audio\FVolumeAudioEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Camera\FCameraManagerEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\FTweenEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Game Object\FInstantiateEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Game Object\FSetActiveEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Light\FLightColorEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Light\FLightIntensityEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Light\FLightRangeEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Light\FLightSpotAngleEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Misc\FCommentEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Particle\FPlayParticleEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Renderer\FRendererColorEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Renderer\FRendererEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Renderer\FRendererFloatEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Renderer\FRendererTextureEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Script\FCallFunctionEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Script\FTweenColorEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Script\FTweenFloatEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Script\FTweenVariableEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Script\FTweenVector2Event.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Script\FTweenVector3Event.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Script\FTweenVector4Event.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Sequence\FPauseSequenceEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Sequence\FPlaySequenceEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Sequence\FStopSequenceEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Time\FTimescaleEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Transform\FAnchorEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Transform\FLookAtEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Transform\FTransformEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Transform\FTweenPositionEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Transform\FTweenRotationEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Events\Transform\FTweenScaleEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FContainer.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FEasing.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FEvent.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FObject.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FSequence.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FSequencePlayer.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FTimeline.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FTrack.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FTween.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\FUtility.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\Caches\FAnimationTrackCache.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\Caches\FParticleTrackCache.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\Caches\FSequenceTrackCache.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\Caches\FTrackCache.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\FAnimationTrack.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\FCommentTrack.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\FParticleTrack.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\FRendererTrack.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\FSequenceTrack.cs" />
+     <Compile Include="Assets\Plugins\Flux\Runtime\Tracks\FTransformTrack.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\AutoDestroy.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\AutoKaleidoWave.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\AutoMove.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\AutoWaveMove.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\Kaleidoscope.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\RealTimeChange.cs" />
+     <Compile Include="Assets\Plugins\KaleidoscopeParticle\Scripts\Shooting.cs" />
+     <Compile Include="Assets\Plugins\SphericalGridBuilder\Scripts\PrefabSetter.cs" />
+     <Compile Include="Assets\Plugins\SphericalGridBuilder\Scripts\Rotater.cs" />
+     <Compile Include="Assets\Plugins\SphericalGridBuilder\Scripts\SphereGridBuilder.cs" />
+     <None Include="Assets\Plugins\KaleidoscopeParticle\0_README_english.txt" />
+     <None Include="Assets\Plugins\SpaceSkybox\Readme.txt" />
+     <None Include="Assets\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
+     <None Include="Assets\Plugins\Android\assets\OSIG_Readme.txt" />
+     <None Include="Assets\VRSampleScenes\Shaders\UIOverlay.shader" />
+     <None Include="Assets\VRSampleScenes\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Plugins\KaleidoscopeParticle\0_README_japanese.txt" />
+     <None Include="Assets\Plugins\WaypointsSystem\Demo_assets\f16\license.txt" />
+     <None Include="Assets\README.txt" />
+     <None Include="Assets\VRSampleScenes\Shaders\SlidingUV.shader" />
+     <None Include="Assets\3DAssets\Butterfly (Animated)\Butterfly (Animated).txt" />
+     <None Include="Assets\Plugins\SphericalGridBuilder\readme.txt" />
+     <None Include="Assets\VRSampleScenes\Shaders\SeparableAlpha.shader" />
+     <None Include="Assets\3DAssets\cu_cat2\Shaders\RimWrap.shader" />
+     <None Include="Assets\VRSampleScenes\Fonts\LICENSE.txt" />
+     <None Include="Assets\Standard Assets\shader\DifBumpSpecTransp.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
